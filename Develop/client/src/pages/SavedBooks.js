@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import {
   Container,
   Card,
@@ -40,7 +39,7 @@ const SavedBooks = () => {
   };
 
   // if data isn't here yet, say so
-  if (!userDataLength) {
+  if (loading) {
     return <h2>LOADING...</h2>;
   }
 
